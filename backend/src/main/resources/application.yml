@@ -4,3 +4,9 @@ spring:
 
   profiles:
     active: local
+spring:
+  application:
+    name: SecureDigitalBankingBackend
+
+  profiles:
+    active: local
