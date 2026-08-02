@@ -15,7 +15,6 @@
     <groupId>com.bank</groupId>
     <artifactId>backend</artifactId>
     <version>1.0.0</version>
-
     <name>SecureDigitalBankingBackend</name>
     <description>Industrial Secure Digital Banking Backend</description>
 
@@ -23,7 +22,9 @@
         <java.version>21</java.version>
         <springdoc.version>2.8.9</springdoc.version>
         <jjwt.version>0.12.6</jjwt.version>
+        <flyway.version>11.11.2</flyway.version>
         <maven.compiler.release>21</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -61,11 +62,18 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Azure SQL Driver -->
+        <!-- Azure SQL -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <!-- Flyway -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>${flyway.version}</version>
         </dependency>
 
         <!-- JWT -->
@@ -103,6 +111,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- Configuration Metadata -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -119,6 +134,7 @@
     </dependencies>
 
     <build>
+
         <plugins>
 
             <plugin>
@@ -129,12 +145,15 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+
                 <configuration>
-                    <release>21</release>
+                    <release>${maven.compiler.release}</release>
                 </configuration>
+
             </plugin>
 
         </plugins>
+
     </build>
 
 </project>
