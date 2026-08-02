@@ -1,0 +1,84 @@
+trigger:
+  - main
+
+pool:
+  name: AhmadMushabbir-Pool
+
+variables:
+  buildConfiguration: Release
+  azureSubscription: Azure-Service-Connection
+  webAppName: ahmad-securebank-app
+
+stages:
+
+- stage: Build
+  displayName: Build Application
+
+  jobs:
+
+  - job: Build
+    displayName: Build Frontend and Backend
+
+    steps:
+
+    - checkout: self
+
+    - task: NodeTool@0
+      displayName: Install Node.js
+      inputs:
+        versionSpec: '22.x'
+
+    - script: |
+        cd frontend
+        npm install
+        npm run build
+      displayName: Build React Frontend
+
+    - task: JavaToolInstaller@0
+      displayName: Use Java 21
+      inputs:
+        versionSpec: '21'
+        jdkArchitectureOption: x64
+        jdkSourceOption: PreInstalled
+
+    - script: |
+        cd backend
+        mvn clean test package
+      displayName: Build Spring Boot
+
+    - task: PublishBuildArtifacts@1
+      displayName: Publish JAR
+      inputs:
+        PathtoPublish: backend/target
+        ArtifactName: drop
+
+- stage: Deploy
+  displayName: Deploy Application
+
+  dependsOn: Build
+
+  jobs:
+
+  - deployment: Deploy
+
+    environment: Production
+
+    strategy:
+
+      runOnce:
+
+        deploy:
+
+          steps:
+
+          - download: current
+            artifact: drop
+
+          - task: AzureWebApp@1
+            displayName: Deploy Spring Boot
+
+            inputs:
+              azureSubscription: $(azureSubscription)
+              appType: webAppLinux
+              appName: $(webAppName)
+              package: $(Pipeline.Workspace)/drop/*.jar
