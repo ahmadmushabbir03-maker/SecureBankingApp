@@ -34,17 +34,21 @@ stages:
         npm run build
       displayName: Build React Frontend
 
-    - task: JavaToolInstaller@0
-      displayName: Use Java 21
-      inputs:
-        versionSpec: '21'
-        jdkArchitectureOption: x64
-        jdkSourceOption: PreInstalled
+    - script: |
+        echo "Verifying Java and Maven..."
+        java -version
+        mvn -version
+      displayName: Verify Java and Maven
 
     - script: |
         cd backend
-        mvn clean test package
+        mvn clean package
       displayName: Build Spring Boot
+
+    - script: |
+        echo "Generated files:"
+        ls -lh backend/target
+      displayName: Verify Build Output
 
     - task: PublishBuildArtifacts@1
       displayName: Publish JAR
