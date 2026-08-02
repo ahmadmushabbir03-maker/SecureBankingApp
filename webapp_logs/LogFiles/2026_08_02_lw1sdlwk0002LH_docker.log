@@ -1,0 +1,1016 @@
+2026-08-02T15:30:23.4350535Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T15:30:26.1568232Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T15:30:26.1668021Z Container start method called.
+2026-08-02T15:30:26.1842644Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:30:26.1846431Z Establishing network.
+2026-08-02T15:30:26.1850448Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:31:17.3641613Z Image azure-app-service/java:21.0.9-r260110 is pulled from registry 10.1.0.6:13209
+2026-08-02T15:31:17.3648013Z Container is starting.
+2026-08-02T15:31:17.3651550Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:31:17.3656179Z Establishing user namespace if not established already.
+2026-08-02T15:31:17.3657708Z Establishing network if not established already.
+2026-08-02T15:31:17.3660919Z Mounting volumes.
+2026-08-02T15:31:17.3673104Z Nested mountpoint 
+2026-08-02T15:31:17.4043223Z Nested mountpoint volatile/logs
+2026-08-02T15:31:17.4452550Z Nested mountpoint 
+2026-08-02T15:31:17.5061517Z Nested mountpoint 
+2026-08-02T15:31:17.5627451Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:31:17.5628544Z Creating container.
+2026-08-02T15:31:17.5629312Z Creating pipes for streaming container io.
+2026-08-02T15:31:17.5629993Z Creating stdout named pipe at /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stdout_899195cd877b4036bed8138ae44c838a.
+2026-08-02T15:31:17.5632894Z Successfully created stdout named pipe at: /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stdout_899195cd877b4036bed8138ae44c838a.
+2026-08-02T15:31:17.5633567Z Opening named pipe /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stdout_899195cd877b4036bed8138ae44c838a for reading in non-blocking mode.
+2026-08-02T15:31:17.5634357Z Successfully opened named pipe: /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stdout_899195cd877b4036bed8138ae44c838a.
+2026-08-02T15:31:17.5634867Z Successfully removed non-blocking flag from /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stdout_899195cd877b4036bed8138ae44c838a.
+2026-08-02T15:31:17.5834180Z Creating stderr named pipe at /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stderr_c68ed8eba1894f75854e8a6436ae2b4b.
+2026-08-02T15:31:17.5908840Z Successfully created stderr named pipe at: /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stderr_c68ed8eba1894f75854e8a6436ae2b4b.
+2026-08-02T15:31:17.5939292Z Opening named pipe /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stderr_c68ed8eba1894f75854e8a6436ae2b4b for reading in non-blocking mode.
+2026-08-02T15:31:17.6306539Z Successfully opened named pipe: /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stderr_c68ed8eba1894f75854e8a6436ae2b4b.
+2026-08-02T15:31:17.6308963Z Successfully removed non-blocking flag from /podr/container/pipe/c41fc776c9c6_ahmad-securebank-app/stderr_c68ed8eba1894f75854e8a6436ae2b4b.
+2026-08-02T15:31:17.6321851Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:31:18.6572971Z Starting container: c41fc776c9c6_ahmad-securebank-app.
+2026-08-02T15:31:18.7764967Z Starting watchers and probes.
+2026-08-02T15:31:18.7776231Z Starting metrics collection.
+2026-08-02T15:31:18.7879442Z Container is running.
+2026-08-02T15:31:18.7880179Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:31:18.9544951Z Container start method finished after 52787 ms.
+2026-08-02T15:31:18.9547769Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:31:18.9548412Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:31:30.8354768Z Site startup probe succeeded after 11.7406747 seconds.
+2026-08-02T15:31:31.0399446Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 11.7406747 seconds., DetailsLevel: INFO
+2026-08-02T15:31:31.8014008Z Site started.
+2026-08-02T15:31:31.8069143Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 15:31:31 (UTC), DetailsLevel: INFO
+2026-08-02T15:31:31.8738780Z Site is running with patch version JAVA-21.0.9
+2026-08-02T15:31:51.5107498Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T15:31:53.5924482Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-08-02T15:31:53.6283579Z Container start method called.
+2026-08-02T15:31:53.6288025Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:31:53.6290153Z Establishing network.
+2026-08-02T15:31:53.6390231Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:31:54.2741674Z Image azure-app-service/java:21.0.9-r260110 is pulled from registry 10.1.0.5:13209
+2026-08-02T15:31:54.2743386Z Container is starting.
+2026-08-02T15:31:54.3100903Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:31:54.3103148Z Establishing user namespace if not established already.
+2026-08-02T15:31:54.3104165Z Establishing network if not established already.
+2026-08-02T15:31:54.3105620Z Mounting volumes.
+2026-08-02T15:31:54.3208027Z Nested mountpoint 
+2026-08-02T15:31:54.3730689Z Nested mountpoint volatile/logs
+2026-08-02T15:31:54.4292713Z Nested mountpoint 
+2026-08-02T15:31:54.4313546Z Nested mountpoint 
+2026-08-02T15:31:54.6399142Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:31:54.6400843Z Creating container.
+2026-08-02T15:31:54.6401895Z Creating pipes for streaming container io.
+2026-08-02T15:31:54.6402789Z Creating stdout named pipe at /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stdout_d6c5678f759342799da99714624f6442.
+2026-08-02T15:31:54.7774857Z Successfully created stdout named pipe at: /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stdout_d6c5678f759342799da99714624f6442.
+2026-08-02T15:31:54.7778861Z Opening named pipe /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stdout_d6c5678f759342799da99714624f6442 for reading in non-blocking mode.
+2026-08-02T15:31:54.7780739Z Successfully opened named pipe: /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stdout_d6c5678f759342799da99714624f6442.
+2026-08-02T15:31:54.7782090Z Successfully removed non-blocking flag from /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stdout_d6c5678f759342799da99714624f6442.
+2026-08-02T15:31:54.7783656Z Creating stderr named pipe at /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stderr_02e9a0cf78a241b9b1a2f445be6a8dc7.
+2026-08-02T15:31:54.7785165Z Successfully created stderr named pipe at: /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stderr_02e9a0cf78a241b9b1a2f445be6a8dc7.
+2026-08-02T15:31:54.7786208Z Opening named pipe /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stderr_02e9a0cf78a241b9b1a2f445be6a8dc7 for reading in non-blocking mode.
+2026-08-02T15:31:54.7787266Z Successfully opened named pipe: /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stderr_02e9a0cf78a241b9b1a2f445be6a8dc7.
+2026-08-02T15:31:54.7788313Z Successfully removed non-blocking flag from /podr/container/pipe/c535eaf676d9_ahmad-securebank-app/stderr_02e9a0cf78a241b9b1a2f445be6a8dc7.
+2026-08-02T15:31:54.7789538Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:31:56.2317385Z Starting container: c535eaf676d9_ahmad-securebank-app.
+2026-08-02T15:31:56.4767665Z Starting watchers and probes.
+2026-08-02T15:31:56.4798811Z Starting metrics collection.
+2026-08-02T15:31:56.4800290Z Container is running.
+2026-08-02T15:31:56.4801087Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:31:57.0080515Z Container start method finished after 3379 ms.
+2026-08-02T15:31:57.0082637Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:31:57.0083013Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:31:59.3127532Z Container has finished running with exit code: 1.
+2026-08-02T15:31:59.3689713Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:31:59.4219540Z Stop and delete container. Retry count = 0
+2026-08-02T15:31:59.4425080Z Stopping container: c535eaf676d9_ahmad-securebank-app.
+2026-08-02T15:31:59.6497793Z Deleting container: c535eaf676d9_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:32:00.1942507Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:32:00.2226755Z Container is terminated. Total time elapsed: 851 ms.
+2026-08-02T15:32:00.2235322Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:32:00.2601329Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:32:00.3095790Z Site startup probe failed after 3.2902954 seconds.
+2026-08-02T15:32:00.7128300Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:32:00.7619988Z Failed to start site. Revert by stopping site.
+2026-08-02T15:32:00.8023123Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:32:00.8511067Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:32:00.8521369Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:32:22.8336132Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 15:31:31 (UTC), DetailsLevel: INFO
+2026-08-02T15:32:22.8361442Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 08/02/2026 15:31:31 (UTC), DetailsLevel: INFO
+2026-08-02T15:32:22.8362723Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:32:23.1786491Z Stop and delete container. Retry count = 0
+2026-08-02T15:32:23.1789732Z Stopping container: c41fc776c9c6_ahmad-securebank-app.
+2026-08-02T15:32:25.3540534Z Deleting container: c41fc776c9c6_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:32:26.0857714Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:32:26.0883317Z Container is terminated. Total time elapsed: 3249 ms.
+2026-08-02T15:32:26.1239623Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:33:21.6055288Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:32:01 (UTC), DetailsLevel: ERR
+2026-08-02T15:33:23.9052498Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:32:01 (UTC), DetailsLevel: ERR
+2026-08-02T15:33:23.9053319Z Container start method called.
+2026-08-02T15:33:23.9053808Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:33:23.9054440Z Establishing network.
+2026-08-02T15:33:23.9055154Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:33:24.4189554Z Container is starting.
+2026-08-02T15:33:24.4193787Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:33:24.4195489Z Establishing user namespace if not established already.
+2026-08-02T15:33:24.4198446Z Establishing network if not established already.
+2026-08-02T15:33:24.4203710Z Mounting volumes.
+2026-08-02T15:33:24.4209637Z Nested mountpoint 
+2026-08-02T15:33:24.4753405Z Nested mountpoint volatile/logs
+2026-08-02T15:33:24.5320297Z Nested mountpoint 
+2026-08-02T15:33:24.5536775Z Nested mountpoint 
+2026-08-02T15:33:24.7156465Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:33:24.7159216Z Creating container.
+2026-08-02T15:33:24.7163839Z Creating pipes for streaming container io.
+2026-08-02T15:33:24.7167534Z Creating stdout named pipe at /podr/container/pipe/bcf973430080_ahmad-securebank-app/stdout_85adee8ec5cc462c8c5a46c4dd988e84.
+2026-08-02T15:33:24.7170705Z Successfully created stdout named pipe at: /podr/container/pipe/bcf973430080_ahmad-securebank-app/stdout_85adee8ec5cc462c8c5a46c4dd988e84.
+2026-08-02T15:33:24.7839953Z Opening named pipe /podr/container/pipe/bcf973430080_ahmad-securebank-app/stdout_85adee8ec5cc462c8c5a46c4dd988e84 for reading in non-blocking mode.
+2026-08-02T15:33:24.7842869Z Successfully opened named pipe: /podr/container/pipe/bcf973430080_ahmad-securebank-app/stdout_85adee8ec5cc462c8c5a46c4dd988e84.
+2026-08-02T15:33:24.7916134Z Successfully removed non-blocking flag from /podr/container/pipe/bcf973430080_ahmad-securebank-app/stdout_85adee8ec5cc462c8c5a46c4dd988e84.
+2026-08-02T15:33:24.7922258Z Creating stderr named pipe at /podr/container/pipe/bcf973430080_ahmad-securebank-app/stderr_3dd3b277866c43fd844f252cd7fee166.
+2026-08-02T15:33:24.7931406Z Successfully created stderr named pipe at: /podr/container/pipe/bcf973430080_ahmad-securebank-app/stderr_3dd3b277866c43fd844f252cd7fee166.
+2026-08-02T15:33:24.7932182Z Opening named pipe /podr/container/pipe/bcf973430080_ahmad-securebank-app/stderr_3dd3b277866c43fd844f252cd7fee166 for reading in non-blocking mode.
+2026-08-02T15:33:24.7933038Z Successfully opened named pipe: /podr/container/pipe/bcf973430080_ahmad-securebank-app/stderr_3dd3b277866c43fd844f252cd7fee166.
+2026-08-02T15:33:24.7933747Z Successfully removed non-blocking flag from /podr/container/pipe/bcf973430080_ahmad-securebank-app/stderr_3dd3b277866c43fd844f252cd7fee166.
+2026-08-02T15:33:24.7939616Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:33:26.6050309Z Starting container: bcf973430080_ahmad-securebank-app.
+2026-08-02T15:33:26.7402810Z Starting watchers and probes.
+2026-08-02T15:33:26.7413176Z Starting metrics collection.
+2026-08-02T15:33:26.7486551Z Container is running.
+2026-08-02T15:33:26.7492027Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:33:26.8766497Z Container start method finished after 2971 ms.
+2026-08-02T15:33:26.8778172Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:33:26.8854499Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:33:29.3350610Z Container has finished running with exit code: 1.
+2026-08-02T15:33:29.3351814Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:33:29.3367265Z Stop and delete container. Retry count = 0
+2026-08-02T15:33:29.3368264Z Stopping container: bcf973430080_ahmad-securebank-app.
+2026-08-02T15:33:29.5234025Z Deleting container: bcf973430080_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:33:29.7715451Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:33:29.7787797Z Container is terminated. Total time elapsed: 436 ms.
+2026-08-02T15:33:29.7793448Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:33:29.7800480Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:32:00, LastErrorDetails: Container exited with exit code 1 during startup after 3.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:33:29.7983422Z Site startup probe failed after 2.9099486 seconds.
+2026-08-02T15:33:30.1837901Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:33:30.1856941Z Failed to start site. Revert by stopping site.
+2026-08-02T15:33:30.1869355Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:33:30.1944189Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:33:30.1944661Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:36:09.1162493Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:33:31 (UTC), DetailsLevel: ERR
+2026-08-02T15:36:21.1314798Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:33:31 (UTC), DetailsLevel: ERR
+2026-08-02T15:36:21.1315742Z Container start method called.
+2026-08-02T15:36:21.1316153Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:36:21.1317052Z Establishing network.
+2026-08-02T15:36:21.1317642Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:36:21.5054256Z Container is starting.
+2026-08-02T15:36:21.5055534Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:36:21.5056100Z Establishing user namespace if not established already.
+2026-08-02T15:36:21.5056777Z Establishing network if not established already.
+2026-08-02T15:36:21.5057539Z Mounting volumes.
+2026-08-02T15:36:21.5325390Z Nested mountpoint 
+2026-08-02T15:36:21.5354855Z Nested mountpoint volatile/logs
+2026-08-02T15:36:21.5924627Z Nested mountpoint 
+2026-08-02T15:36:21.6126608Z Nested mountpoint 
+2026-08-02T15:36:21.6421508Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:36:21.6429766Z Creating container.
+2026-08-02T15:36:21.6432327Z Creating pipes for streaming container io.
+2026-08-02T15:36:21.6439380Z Creating stdout named pipe at /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stdout_7a697b5732bc44a98b2555589c42fdc1.
+2026-08-02T15:36:21.6448398Z Successfully created stdout named pipe at: /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stdout_7a697b5732bc44a98b2555589c42fdc1.
+2026-08-02T15:36:21.6521860Z Opening named pipe /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stdout_7a697b5732bc44a98b2555589c42fdc1 for reading in non-blocking mode.
+2026-08-02T15:36:21.6522744Z Successfully opened named pipe: /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stdout_7a697b5732bc44a98b2555589c42fdc1.
+2026-08-02T15:36:21.6523344Z Successfully removed non-blocking flag from /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stdout_7a697b5732bc44a98b2555589c42fdc1.
+2026-08-02T15:36:21.6524610Z Creating stderr named pipe at /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stderr_ae10cb3b11c1407584a581f4991bc371.
+2026-08-02T15:36:21.6531194Z Successfully created stderr named pipe at: /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stderr_ae10cb3b11c1407584a581f4991bc371.
+2026-08-02T15:36:21.6532196Z Opening named pipe /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stderr_ae10cb3b11c1407584a581f4991bc371 for reading in non-blocking mode.
+2026-08-02T15:36:21.6533052Z Successfully opened named pipe: /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stderr_ae10cb3b11c1407584a581f4991bc371.
+2026-08-02T15:36:21.6533624Z Successfully removed non-blocking flag from /podr/container/pipe/da166ebf7d5f_ahmad-securebank-app/stderr_ae10cb3b11c1407584a581f4991bc371.
+2026-08-02T15:36:21.6534602Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T15:36:21.6535095Z Setting value of PORT variable to 80
+2026-08-02T15:36:21.6537193Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:36:22.1693251Z Starting container: da166ebf7d5f_ahmad-securebank-app.
+2026-08-02T15:36:22.2991193Z Starting watchers and probes.
+2026-08-02T15:36:22.3085449Z Starting metrics collection.
+2026-08-02T15:36:22.3103411Z Container is running.
+2026-08-02T15:36:22.3659822Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:36:22.4843923Z Container start method finished after 1352 ms.
+2026-08-02T15:36:22.4930313Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:36:22.4931572Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:36:23.3887367Z Container has finished running with exit code: 1.
+2026-08-02T15:36:23.3893505Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:36:23.3980117Z Stop and delete container. Retry count = 0
+2026-08-02T15:36:23.3980953Z Stopping container: da166ebf7d5f_ahmad-securebank-app.
+2026-08-02T15:36:23.4860529Z Deleting container: da166ebf7d5f_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:36:23.7912163Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:36:23.7918876Z Container is terminated. Total time elapsed: 401 ms.
+2026-08-02T15:36:23.8008582Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:36:23.8010691Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:33:30, LastErrorDetails: Container exited with exit code 1 during startup after 3.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:23.8162840Z Site startup probe failed after 1.3210712 seconds.
+2026-08-02T15:36:24.0645333Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:24.1028870Z Failed to start site. Revert by stopping site.
+2026-08-02T15:36:24.1030864Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:24.1033044Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:24.1033251Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:36:24.1136284Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:24.5565027Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:36:30.1968715Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:36:30 (UTC), DetailsLevel: ERR
+2026-08-02T15:36:30.6094701Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:36:30 (UTC), DetailsLevel: ERR
+2026-08-02T15:41:19.3799635Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:36:30 (UTC), DetailsLevel: ERR
+2026-08-02T15:41:27.0602353Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:36:30 (UTC), DetailsLevel: ERR
+2026-08-02T15:41:27.0603285Z Container start method called.
+2026-08-02T15:41:27.0603802Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:41:27.0604626Z Establishing network.
+2026-08-02T15:41:27.0736826Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:41:27.3849378Z Container is starting.
+2026-08-02T15:41:27.3850778Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:41:27.3854368Z Establishing user namespace if not established already.
+2026-08-02T15:41:27.3855688Z Establishing network if not established already.
+2026-08-02T15:41:27.3859673Z Mounting volumes.
+2026-08-02T15:41:27.3877619Z Nested mountpoint 
+2026-08-02T15:41:27.4148971Z Nested mountpoint volatile/logs
+2026-08-02T15:41:27.4554649Z Nested mountpoint 
+2026-08-02T15:41:27.4570674Z Nested mountpoint 
+2026-08-02T15:41:27.4950032Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:41:27.4958274Z Creating container.
+2026-08-02T15:41:27.5029391Z Creating pipes for streaming container io.
+2026-08-02T15:41:27.5033542Z Creating stdout named pipe at /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stdout_2812ccc1e98b4942b29a5e066dfc596e.
+2026-08-02T15:41:27.5036105Z Successfully created stdout named pipe at: /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stdout_2812ccc1e98b4942b29a5e066dfc596e.
+2026-08-02T15:41:27.5037487Z Opening named pipe /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stdout_2812ccc1e98b4942b29a5e066dfc596e for reading in non-blocking mode.
+2026-08-02T15:41:27.5039507Z Successfully opened named pipe: /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stdout_2812ccc1e98b4942b29a5e066dfc596e.
+2026-08-02T15:41:27.5041136Z Successfully removed non-blocking flag from /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stdout_2812ccc1e98b4942b29a5e066dfc596e.
+2026-08-02T15:41:27.5062883Z Creating stderr named pipe at /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stderr_4891148823ed4d2d8960e2722f3fd040.
+2026-08-02T15:41:27.5152106Z Successfully created stderr named pipe at: /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stderr_4891148823ed4d2d8960e2722f3fd040.
+2026-08-02T15:41:27.5158916Z Opening named pipe /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stderr_4891148823ed4d2d8960e2722f3fd040 for reading in non-blocking mode.
+2026-08-02T15:41:27.5221010Z Successfully opened named pipe: /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stderr_4891148823ed4d2d8960e2722f3fd040.
+2026-08-02T15:41:27.5226995Z Successfully removed non-blocking flag from /podr/container/pipe/c094099d5cfa_ahmad-securebank-app/stderr_4891148823ed4d2d8960e2722f3fd040.
+2026-08-02T15:41:27.5279795Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T15:41:27.5322138Z Setting value of PORT variable to 80
+2026-08-02T15:41:27.5334345Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:41:28.2506250Z Starting container: c094099d5cfa_ahmad-securebank-app.
+2026-08-02T15:41:28.3630843Z Starting watchers and probes.
+2026-08-02T15:41:28.3657233Z Starting metrics collection.
+2026-08-02T15:41:28.3723502Z Container is running.
+2026-08-02T15:41:28.3728792Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:41:28.5409527Z Container start method finished after 1480 ms.
+2026-08-02T15:41:28.5411300Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:41:28.5411513Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:41:29.7535869Z Container has finished running with exit code: 1.
+2026-08-02T15:41:29.7537412Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:41:29.7555774Z Stop and delete container. Retry count = 0
+2026-08-02T15:41:29.7558179Z Stopping container: c094099d5cfa_ahmad-securebank-app.
+2026-08-02T15:41:29.8124283Z Deleting container: c094099d5cfa_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:41:30.0479424Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:41:30.0552126Z Container is terminated. Total time elapsed: 300 ms.
+2026-08-02T15:41:30.0559764Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:41:30.0573481Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:36:24, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:30.0891518Z Site startup probe failed after 1.5470193 seconds.
+2026-08-02T15:41:30.2629090Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:30.2823751Z Failed to start site. Revert by stopping site.
+2026-08-02T15:41:30.2890836Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:30.2898370Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:30.2898642Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:41:30.3162861Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:30.6080554Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:41:39.2382871Z Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 15:42:39
+2026-08-02T15:41:39.2462392Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 15:42:39, DetailsLevel: WARN
+2026-08-02T15:41:39.2766313Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:41:39 (UTC), DetailsLevel: WARN
+2026-08-02T15:41:39.6847154Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:41:39 (UTC), DetailsLevel: WARN
+2026-08-02T15:42:39.2403344Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T15:42:39.4345722Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:41:39 (UTC), DetailsLevel: WARN
+2026-08-02T15:42:47.3731219Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:41:39 (UTC), DetailsLevel: WARN
+2026-08-02T15:42:47.3732144Z Container start method called.
+2026-08-02T15:42:47.3732739Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:42:47.3733541Z Establishing network.
+2026-08-02T15:42:47.3734493Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:42:47.6581919Z Container is starting.
+2026-08-02T15:42:47.6584770Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:42:47.6590684Z Establishing user namespace if not established already.
+2026-08-02T15:42:47.6669525Z Establishing network if not established already.
+2026-08-02T15:42:47.6674567Z Mounting volumes.
+2026-08-02T15:42:47.6682875Z Nested mountpoint 
+2026-08-02T15:42:47.6767641Z Nested mountpoint volatile/logs
+2026-08-02T15:42:47.6892466Z Nested mountpoint 
+2026-08-02T15:42:47.6897586Z Nested mountpoint 
+2026-08-02T15:42:47.7444956Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:42:47.7451463Z Creating container.
+2026-08-02T15:42:47.7462884Z Creating pipes for streaming container io.
+2026-08-02T15:42:47.7539972Z Creating stdout named pipe at /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stdout_d38b72307f7d42e99a5d92c43f2378e1.
+2026-08-02T15:42:47.7542350Z Successfully created stdout named pipe at: /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stdout_d38b72307f7d42e99a5d92c43f2378e1.
+2026-08-02T15:42:47.7543181Z Opening named pipe /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stdout_d38b72307f7d42e99a5d92c43f2378e1 for reading in non-blocking mode.
+2026-08-02T15:42:47.7544238Z Successfully opened named pipe: /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stdout_d38b72307f7d42e99a5d92c43f2378e1.
+2026-08-02T15:42:47.7544982Z Successfully removed non-blocking flag from /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stdout_d38b72307f7d42e99a5d92c43f2378e1.
+2026-08-02T15:42:47.7546137Z Creating stderr named pipe at /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stderr_5b4ca79acc1c435b9949a2691cfc31a9.
+2026-08-02T15:42:47.7547300Z Successfully created stderr named pipe at: /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stderr_5b4ca79acc1c435b9949a2691cfc31a9.
+2026-08-02T15:42:47.7548028Z Opening named pipe /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stderr_5b4ca79acc1c435b9949a2691cfc31a9 for reading in non-blocking mode.
+2026-08-02T15:42:47.7548843Z Successfully opened named pipe: /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stderr_5b4ca79acc1c435b9949a2691cfc31a9.
+2026-08-02T15:42:47.7549974Z Successfully removed non-blocking flag from /podr/container/pipe/6b4d4f044f0e_ahmad-securebank-app/stderr_5b4ca79acc1c435b9949a2691cfc31a9.
+2026-08-02T15:42:47.7716092Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T15:42:47.7717143Z Setting value of PORT variable to 80
+2026-08-02T15:42:47.7730602Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:42:48.5739179Z Starting container: 6b4d4f044f0e_ahmad-securebank-app.
+2026-08-02T15:42:48.6462188Z Starting watchers and probes.
+2026-08-02T15:42:48.6469034Z Starting metrics collection.
+2026-08-02T15:42:48.6472211Z Container is running.
+2026-08-02T15:42:48.6486938Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:42:48.8143935Z Container start method finished after 1441 ms.
+2026-08-02T15:42:48.8145911Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:42:48.8146204Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:42:49.7178697Z Container has finished running with exit code: 1.
+2026-08-02T15:42:49.7189172Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:42:49.7209244Z Stop and delete container. Retry count = 0
+2026-08-02T15:42:49.7285464Z Stopping container: 6b4d4f044f0e_ahmad-securebank-app.
+2026-08-02T15:42:49.7967830Z Deleting container: 6b4d4f044f0e_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:42:50.1727841Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:42:50.1730703Z Container is terminated. Total time elapsed: 453 ms.
+2026-08-02T15:42:50.1734878Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:42:50.1739727Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:41:30, LastErrorDetails: Container exited with exit code 1 during startup after 1.7s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:42:50.1750468Z Site startup probe failed after 1.3596629 seconds.
+2026-08-02T15:42:50.4481310Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:42:50.4882165Z Failed to start site. Revert by stopping site.
+2026-08-02T15:42:50.4887966Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:42:50.4954526Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:42:50.4954856Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:43:23.3740218Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:42:56 (UTC), DetailsLevel: WARN
+2026-08-02T15:43:33.2382021Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:42:56 (UTC), DetailsLevel: WARN
+2026-08-02T15:44:22.3007390Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:42:56 (UTC), DetailsLevel: WARN
+2026-08-02T15:44:22.3008862Z Container start method called.
+2026-08-02T15:44:22.3545625Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:44:22.3548936Z Establishing network.
+2026-08-02T15:44:22.3550259Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:44:22.6666262Z Container is starting.
+2026-08-02T15:44:22.6668013Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:44:22.6669410Z Establishing user namespace if not established already.
+2026-08-02T15:44:22.6670824Z Establishing network if not established already.
+2026-08-02T15:44:22.6737125Z Mounting volumes.
+2026-08-02T15:44:22.6739739Z Nested mountpoint 
+2026-08-02T15:44:22.6916350Z Nested mountpoint volatile/logs
+2026-08-02T15:44:22.7200702Z Nested mountpoint 
+2026-08-02T15:44:22.7210671Z Nested mountpoint 
+2026-08-02T15:44:22.7963216Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:44:22.8221414Z Creating container.
+2026-08-02T15:44:22.8222468Z Creating pipes for streaming container io.
+2026-08-02T15:44:22.8235791Z Creating stdout named pipe at /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stdout_0bb4ae7205ab4348a1e4ac191e6f44b7.
+2026-08-02T15:44:22.8239537Z Successfully created stdout named pipe at: /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stdout_0bb4ae7205ab4348a1e4ac191e6f44b7.
+2026-08-02T15:44:22.8240242Z Opening named pipe /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stdout_0bb4ae7205ab4348a1e4ac191e6f44b7 for reading in non-blocking mode.
+2026-08-02T15:44:22.8241417Z Successfully opened named pipe: /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stdout_0bb4ae7205ab4348a1e4ac191e6f44b7.
+2026-08-02T15:44:22.8242202Z Successfully removed non-blocking flag from /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stdout_0bb4ae7205ab4348a1e4ac191e6f44b7.
+2026-08-02T15:44:22.8290072Z Creating stderr named pipe at /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stderr_7bf86c26b2e54e7d9f4ba79ef739de2a.
+2026-08-02T15:44:22.8291626Z Successfully created stderr named pipe at: /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stderr_7bf86c26b2e54e7d9f4ba79ef739de2a.
+2026-08-02T15:44:22.8292295Z Opening named pipe /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stderr_7bf86c26b2e54e7d9f4ba79ef739de2a for reading in non-blocking mode.
+2026-08-02T15:44:22.8293371Z Successfully opened named pipe: /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stderr_7bf86c26b2e54e7d9f4ba79ef739de2a.
+2026-08-02T15:44:22.8294171Z Successfully removed non-blocking flag from /podr/container/pipe/d7fabb140ec1_ahmad-securebank-app/stderr_7bf86c26b2e54e7d9f4ba79ef739de2a.
+2026-08-02T15:44:22.8295461Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T15:44:22.8296208Z Setting value of PORT variable to 80
+2026-08-02T15:44:22.8297613Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:44:23.5297579Z Starting container: d7fabb140ec1_ahmad-securebank-app.
+2026-08-02T15:44:23.6293493Z Starting watchers and probes.
+2026-08-02T15:44:23.6298091Z Starting metrics collection.
+2026-08-02T15:44:23.6376346Z Container is running.
+2026-08-02T15:44:23.6381402Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:44:23.7754023Z Container start method finished after 1473 ms.
+2026-08-02T15:44:23.7758180Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:44:23.7858242Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:44:26.5060680Z Container has finished running with exit code: 1.
+2026-08-02T15:44:26.5062770Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:44:26.5071151Z Stop and delete container. Retry count = 0
+2026-08-02T15:44:26.5072471Z Stopping container: d7fabb140ec1_ahmad-securebank-app.
+2026-08-02T15:44:26.6041230Z Deleting container: d7fabb140ec1_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:44:26.9915609Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:44:27.0075869Z Container is terminated. Total time elapsed: 485 ms.
+2026-08-02T15:44:27.0077703Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:44:27.0083066Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:42:50, LastErrorDetails: Container exited with exit code 1 during startup after 1.5s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:27.0448445Z Site startup probe failed after 3.2241814 seconds.
+2026-08-02T15:44:27.3127029Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:27.3153157Z Failed to start site. Revert by stopping site.
+2026-08-02T15:44:27.3154797Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:27.3423852Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:28.5008586Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T15:44:28.5098574Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:28.5107885Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:44:28.5298429Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:28.8528884Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:44:35.5909302Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:44:35 (UTC), DetailsLevel: ERR
+2026-08-02T15:44:35.9804324Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:44:35 (UTC), DetailsLevel: ERR
+2026-08-02T15:47:59.6186774Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:44:35 (UTC), DetailsLevel: ERR
+2026-08-02T15:48:11.9619654Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:44:35 (UTC), DetailsLevel: ERR
+2026-08-02T15:48:58.8625783Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:44:35 (UTC), DetailsLevel: ERR
+2026-08-02T15:48:58.8631247Z Container start method called.
+2026-08-02T15:48:58.8634255Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:48:58.8639153Z Establishing network.
+2026-08-02T15:48:58.8643929Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T15:48:59.1098437Z Container is starting.
+2026-08-02T15:48:59.1108796Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T15:48:59.1134070Z Establishing user namespace if not established already.
+2026-08-02T15:48:59.1135329Z Establishing network if not established already.
+2026-08-02T15:48:59.1140654Z Mounting volumes.
+2026-08-02T15:48:59.1148828Z Nested mountpoint 
+2026-08-02T15:48:59.1347306Z Nested mountpoint volatile/logs
+2026-08-02T15:48:59.1827835Z Nested mountpoint 
+2026-08-02T15:48:59.1934713Z Nested mountpoint 
+2026-08-02T15:48:59.3519300Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T15:48:59.3532249Z Creating container.
+2026-08-02T15:48:59.3535430Z Creating pipes for streaming container io.
+2026-08-02T15:48:59.3600058Z Creating stdout named pipe at /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stdout_6388bfedca564097b8c7a23a052cea0e.
+2026-08-02T15:48:59.3613397Z Successfully created stdout named pipe at: /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stdout_6388bfedca564097b8c7a23a052cea0e.
+2026-08-02T15:48:59.3620219Z Opening named pipe /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stdout_6388bfedca564097b8c7a23a052cea0e for reading in non-blocking mode.
+2026-08-02T15:48:59.3703147Z Successfully opened named pipe: /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stdout_6388bfedca564097b8c7a23a052cea0e.
+2026-08-02T15:48:59.3709699Z Successfully removed non-blocking flag from /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stdout_6388bfedca564097b8c7a23a052cea0e.
+2026-08-02T15:48:59.4119282Z Creating stderr named pipe at /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stderr_ebda1f516ad84959a755014781102294.
+2026-08-02T15:48:59.4121233Z Successfully created stderr named pipe at: /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stderr_ebda1f516ad84959a755014781102294.
+2026-08-02T15:48:59.4121907Z Opening named pipe /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stderr_ebda1f516ad84959a755014781102294 for reading in non-blocking mode.
+2026-08-02T15:48:59.4122706Z Successfully opened named pipe: /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stderr_ebda1f516ad84959a755014781102294.
+2026-08-02T15:48:59.4123290Z Successfully removed non-blocking flag from /podr/container/pipe/97c9e7b4be51_ahmad-securebank-app/stderr_ebda1f516ad84959a755014781102294.
+2026-08-02T15:48:59.4400316Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T15:48:59.4408743Z Setting value of PORT variable to 80
+2026-08-02T15:48:59.4417626Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T15:49:00.2430622Z Starting container: 97c9e7b4be51_ahmad-securebank-app.
+2026-08-02T15:49:00.3257625Z Starting watchers and probes.
+2026-08-02T15:49:00.3267692Z Starting metrics collection.
+2026-08-02T15:49:00.3335651Z Container is running.
+2026-08-02T15:49:00.3337695Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:49:00.5639278Z Container start method finished after 1700 ms.
+2026-08-02T15:49:00.5641113Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T15:49:00.5641370Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T15:49:01.9487737Z Container has finished running with exit code: 1.
+2026-08-02T15:49:01.9498383Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T15:49:01.9694292Z Stop and delete container. Retry count = 0
+2026-08-02T15:49:01.9697206Z Stopping container: 97c9e7b4be51_ahmad-securebank-app.
+2026-08-02T15:49:02.0743280Z Deleting container: 97c9e7b4be51_ahmad-securebank-app. Retry count = 0
+2026-08-02T15:49:02.3111213Z Container spec TerminationMessagePolicy  path 
+2026-08-02T15:49:02.3118038Z Container is terminated. Total time elapsed: 361 ms.
+2026-08-02T15:49:02.3173955Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T15:49:02.3181646Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:44:27, LastErrorDetails: Container exited with exit code 1 during startup after 3.4s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:02.3562331Z Site startup probe failed after 1.6918307 seconds.
+2026-08-02T15:49:02.5331009Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:02.6010186Z Failed to start site. Revert by stopping site.
+2026-08-02T15:49:02.6016412Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:02.6184011Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:03.0093624Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T15:49:03.0263738Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:03.0270379Z Site: ahmad-securebank-app stopped.
+2026-08-02T15:49:03.0357591Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:03.5295536Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T15:49:09.7929108Z Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 15:50:09
+2026-08-02T15:49:09.7931055Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 15:50:09, DetailsLevel: WARN
+2026-08-02T15:49:09.7933595Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:49:09 (UTC), DetailsLevel: WARN
+2026-08-02T15:49:10.1198328Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:49:09 (UTC), DetailsLevel: WARN
+2026-08-02T15:50:09.7908694Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T16:23:01.6019312Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:49:09 (UTC), DetailsLevel: WARN
+2026-08-02T16:23:11.9167554Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:49:09 (UTC), DetailsLevel: WARN
+2026-08-02T16:24:03.2116269Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 15:49:09 (UTC), DetailsLevel: WARN
+2026-08-02T16:24:03.2117187Z Container start method called.
+2026-08-02T16:24:03.2117604Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T16:24:03.2118125Z Establishing network.
+2026-08-02T16:24:03.2118930Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T16:24:03.5559632Z Container is starting.
+2026-08-02T16:24:03.5561026Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T16:24:03.5562472Z Establishing user namespace if not established already.
+2026-08-02T16:24:03.5563591Z Establishing network if not established already.
+2026-08-02T16:24:03.5564850Z Mounting volumes.
+2026-08-02T16:24:03.5567900Z Nested mountpoint 
+2026-08-02T16:24:03.6048658Z Nested mountpoint volatile/logs
+2026-08-02T16:24:03.6987619Z Nested mountpoint 
+2026-08-02T16:24:03.7191555Z Nested mountpoint 
+2026-08-02T16:24:03.8794408Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T16:24:03.9054449Z Creating container.
+2026-08-02T16:24:03.9056306Z Creating pipes for streaming container io.
+2026-08-02T16:24:03.9066348Z Creating stdout named pipe at /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stdout_21f64b6a610943ba9eceeabe759a6e22.
+2026-08-02T16:24:03.9090512Z Successfully created stdout named pipe at: /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stdout_21f64b6a610943ba9eceeabe759a6e22.
+2026-08-02T16:24:03.9673425Z Opening named pipe /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stdout_21f64b6a610943ba9eceeabe759a6e22 for reading in non-blocking mode.
+2026-08-02T16:24:04.0213585Z Successfully opened named pipe: /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stdout_21f64b6a610943ba9eceeabe759a6e22.
+2026-08-02T16:24:04.0215901Z Successfully removed non-blocking flag from /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stdout_21f64b6a610943ba9eceeabe759a6e22.
+2026-08-02T16:24:04.0330105Z Creating stderr named pipe at /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stderr_0c748f0a5acd4fe8af2ccbe49a475fb4.
+2026-08-02T16:24:04.0331804Z Successfully created stderr named pipe at: /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stderr_0c748f0a5acd4fe8af2ccbe49a475fb4.
+2026-08-02T16:24:04.0332432Z Opening named pipe /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stderr_0c748f0a5acd4fe8af2ccbe49a475fb4 for reading in non-blocking mode.
+2026-08-02T16:24:04.0912297Z Successfully opened named pipe: /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stderr_0c748f0a5acd4fe8af2ccbe49a475fb4.
+2026-08-02T16:24:04.0917702Z Successfully removed non-blocking flag from /podr/container/pipe/86f5946ec590_ahmad-securebank-app/stderr_0c748f0a5acd4fe8af2ccbe49a475fb4.
+2026-08-02T16:24:04.1183659Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T16:24:04.1199737Z Setting value of PORT variable to 80
+2026-08-02T16:24:04.1264605Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T16:24:05.9778645Z Starting container: 86f5946ec590_ahmad-securebank-app.
+2026-08-02T16:24:06.1946479Z Starting watchers and probes.
+2026-08-02T16:24:06.2375198Z Starting metrics collection.
+2026-08-02T16:24:06.2378688Z Container is running.
+2026-08-02T16:24:06.2511439Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T16:24:06.4950166Z Container start method finished after 3283 ms.
+2026-08-02T16:24:06.5741665Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T16:24:06.5744742Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T16:24:08.5837003Z Container has finished running with exit code: 1.
+2026-08-02T16:24:08.5853332Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T16:24:08.5955165Z Stop and delete container. Retry count = 0
+2026-08-02T16:24:08.5969923Z Stopping container: 86f5946ec590_ahmad-securebank-app.
+2026-08-02T16:24:08.7790768Z Deleting container: 86f5946ec590_ahmad-securebank-app. Retry count = 0
+2026-08-02T16:24:09.1318300Z Container spec TerminationMessagePolicy  path 
+2026-08-02T16:24:09.1328504Z Container is terminated. Total time elapsed: 546 ms.
+2026-08-02T16:24:09.1330109Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T16:24:09.1332983Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 15:49:02, LastErrorDetails: Container exited with exit code 1 during startup after 2.0s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:09.1714618Z Site startup probe failed after 2.5482262 seconds.
+2026-08-02T16:24:09.4012366Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:09.4399696Z Failed to start site. Revert by stopping site.
+2026-08-02T16:24:09.4479042Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:09.4492068Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:09.9219943Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T16:24:09.9222449Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:09.9225312Z Site: ahmad-securebank-app stopped.
+2026-08-02T16:24:09.9336404Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:10.4712338Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:24:16.9343445Z Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 16:25:16
+2026-08-02T16:24:16.9345058Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 1 minutes till 08/02/2026 16:25:16, DetailsLevel: WARN
+2026-08-02T16:24:16.9347935Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:24:16 (UTC), DetailsLevel: WARN
+2026-08-02T16:24:17.6352556Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:24:16 (UTC), DetailsLevel: WARN
+2026-08-02T16:25:16.9373971Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T16:58:04.3133058Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:24:16 (UTC), DetailsLevel: WARN
+2026-08-02T16:58:14.2376659Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:24:16 (UTC), DetailsLevel: WARN
+2026-08-02T16:59:03.2027850Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:24:16 (UTC), DetailsLevel: WARN
+2026-08-02T16:59:03.2033114Z Container start method called.
+2026-08-02T16:59:03.2048867Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T16:59:03.2050433Z Establishing network.
+2026-08-02T16:59:03.2212828Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T16:59:03.4256890Z Container is starting.
+2026-08-02T16:59:03.4260591Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T16:59:03.4329155Z Establishing user namespace if not established already.
+2026-08-02T16:59:03.4331524Z Establishing network if not established already.
+2026-08-02T16:59:03.4332983Z Mounting volumes.
+2026-08-02T16:59:03.4336782Z Nested mountpoint 
+2026-08-02T16:59:03.4650379Z Nested mountpoint volatile/logs
+2026-08-02T16:59:03.5233090Z Nested mountpoint 
+2026-08-02T16:59:03.5423405Z Nested mountpoint 
+2026-08-02T16:59:03.6618043Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T16:59:03.6620914Z Creating container.
+2026-08-02T16:59:03.6640588Z Creating pipes for streaming container io.
+2026-08-02T16:59:03.6642607Z Creating stdout named pipe at /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stdout_d7b35a15cdff4236b9979badd54d8845.
+2026-08-02T16:59:03.6645053Z Successfully created stdout named pipe at: /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stdout_d7b35a15cdff4236b9979badd54d8845.
+2026-08-02T16:59:03.6647246Z Opening named pipe /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stdout_d7b35a15cdff4236b9979badd54d8845 for reading in non-blocking mode.
+2026-08-02T16:59:03.6648732Z Successfully opened named pipe: /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stdout_d7b35a15cdff4236b9979badd54d8845.
+2026-08-02T16:59:03.6649977Z Successfully removed non-blocking flag from /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stdout_d7b35a15cdff4236b9979badd54d8845.
+2026-08-02T16:59:03.7321467Z Creating stderr named pipe at /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stderr_dbe0f57cc4024bbd9bdac3f012bcdbb6.
+2026-08-02T16:59:03.7323309Z Successfully created stderr named pipe at: /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stderr_dbe0f57cc4024bbd9bdac3f012bcdbb6.
+2026-08-02T16:59:03.7324175Z Opening named pipe /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stderr_dbe0f57cc4024bbd9bdac3f012bcdbb6 for reading in non-blocking mode.
+2026-08-02T16:59:03.7324985Z Successfully opened named pipe: /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stderr_dbe0f57cc4024bbd9bdac3f012bcdbb6.
+2026-08-02T16:59:03.7343173Z Successfully removed non-blocking flag from /podr/container/pipe/ad896abe2c83_ahmad-securebank-app/stderr_dbe0f57cc4024bbd9bdac3f012bcdbb6.
+2026-08-02T16:59:03.7345059Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T16:59:03.7345619Z Setting value of PORT variable to 80
+2026-08-02T16:59:03.7347416Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T16:59:04.4398268Z Starting container: ad896abe2c83_ahmad-securebank-app.
+2026-08-02T16:59:04.5561863Z Starting watchers and probes.
+2026-08-02T16:59:04.5569051Z Starting metrics collection.
+2026-08-02T16:59:04.5571871Z Container is running.
+2026-08-02T16:59:04.5573230Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T16:59:04.8048114Z Container start method finished after 1600 ms.
+2026-08-02T16:59:04.8151785Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T16:59:04.8152150Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T16:59:05.8195951Z Container has finished running with exit code: 1.
+2026-08-02T16:59:05.8202709Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T16:59:05.8278512Z Stop and delete container. Retry count = 0
+2026-08-02T16:59:05.8279166Z Stopping container: ad896abe2c83_ahmad-securebank-app.
+2026-08-02T16:59:05.9069362Z Deleting container: ad896abe2c83_ahmad-securebank-app. Retry count = 0
+2026-08-02T16:59:06.1590495Z Container spec TerminationMessagePolicy  path 
+2026-08-02T16:59:06.1673113Z Container is terminated. Total time elapsed: 346 ms.
+2026-08-02T16:59:06.1677332Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T16:59:06.1678339Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:24:09, LastErrorDetails: Container exited with exit code 1 during startup after 2.9s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:06.1792176Z Site startup probe failed after 1.3059571 seconds.
+2026-08-02T16:59:06.3550484Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:06.3836964Z Failed to start site. Revert by stopping site.
+2026-08-02T16:59:06.3860831Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:06.3927303Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:06.7720894Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T16:59:06.7727822Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:06.7745266Z Site: ahmad-securebank-app stopped.
+2026-08-02T16:59:06.7840181Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:07.1509784Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T16:59:13.8491300Z Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 17:01:13
+2026-08-02T16:59:13.8532525Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 17:01:13, DetailsLevel: WARN
+2026-08-02T16:59:13.8704320Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:59:13 (UTC), DetailsLevel: WARN
+2026-08-02T16:59:14.3195212Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:59:13 (UTC), DetailsLevel: WARN
+2026-08-02T17:01:13.8459505Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T17:33:05.2340050Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:59:13 (UTC), DetailsLevel: WARN
+2026-08-02T17:33:15.9715550Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:59:13 (UTC), DetailsLevel: WARN
+2026-08-02T17:34:08.1413127Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 16:59:13 (UTC), DetailsLevel: WARN
+2026-08-02T17:34:08.1478593Z Container start method called.
+2026-08-02T17:34:08.1484391Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T17:34:08.1485690Z Establishing network.
+2026-08-02T17:34:08.1500424Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T17:34:08.4092267Z Container is starting.
+2026-08-02T17:34:08.4093491Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T17:34:08.4094623Z Establishing user namespace if not established already.
+2026-08-02T17:34:08.4101086Z Establishing network if not established already.
+2026-08-02T17:34:08.4272797Z Mounting volumes.
+2026-08-02T17:34:08.4274386Z Nested mountpoint 
+2026-08-02T17:34:08.4473992Z Nested mountpoint volatile/logs
+2026-08-02T17:34:08.4496646Z Nested mountpoint 
+2026-08-02T17:34:08.4991547Z Nested mountpoint 
+2026-08-02T17:34:08.6373564Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T17:34:08.6374738Z Creating container.
+2026-08-02T17:34:08.6661989Z Creating pipes for streaming container io.
+2026-08-02T17:34:08.6663371Z Creating stdout named pipe at /podr/container/pipe/5748ff045749_ahmad-securebank-app/stdout_5ec16858be724ce69a77620a499b6c6f.
+2026-08-02T17:34:08.6668617Z Successfully created stdout named pipe at: /podr/container/pipe/5748ff045749_ahmad-securebank-app/stdout_5ec16858be724ce69a77620a499b6c6f.
+2026-08-02T17:34:08.6671240Z Opening named pipe /podr/container/pipe/5748ff045749_ahmad-securebank-app/stdout_5ec16858be724ce69a77620a499b6c6f for reading in non-blocking mode.
+2026-08-02T17:34:08.6672094Z Successfully opened named pipe: /podr/container/pipe/5748ff045749_ahmad-securebank-app/stdout_5ec16858be724ce69a77620a499b6c6f.
+2026-08-02T17:34:08.6672584Z Successfully removed non-blocking flag from /podr/container/pipe/5748ff045749_ahmad-securebank-app/stdout_5ec16858be724ce69a77620a499b6c6f.
+2026-08-02T17:34:08.6673581Z Creating stderr named pipe at /podr/container/pipe/5748ff045749_ahmad-securebank-app/stderr_ed498b4a561142d89332799178ff4a4d.
+2026-08-02T17:34:08.6674555Z Successfully created stderr named pipe at: /podr/container/pipe/5748ff045749_ahmad-securebank-app/stderr_ed498b4a561142d89332799178ff4a4d.
+2026-08-02T17:34:08.6675058Z Opening named pipe /podr/container/pipe/5748ff045749_ahmad-securebank-app/stderr_ed498b4a561142d89332799178ff4a4d for reading in non-blocking mode.
+2026-08-02T17:34:08.6675697Z Successfully opened named pipe: /podr/container/pipe/5748ff045749_ahmad-securebank-app/stderr_ed498b4a561142d89332799178ff4a4d.
+2026-08-02T17:34:08.6676168Z Successfully removed non-blocking flag from /podr/container/pipe/5748ff045749_ahmad-securebank-app/stderr_ed498b4a561142d89332799178ff4a4d.
+2026-08-02T17:34:08.6677092Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T17:34:08.6677485Z Setting value of PORT variable to 80
+2026-08-02T17:34:08.6684029Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T17:34:09.4419571Z Starting container: 5748ff045749_ahmad-securebank-app.
+2026-08-02T17:34:09.5670994Z Starting watchers and probes.
+2026-08-02T17:34:09.5683006Z Starting metrics collection.
+2026-08-02T17:34:09.5809883Z Container is running.
+2026-08-02T17:34:09.5896312Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T17:34:09.7075467Z Container start method finished after 1559 ms.
+2026-08-02T17:34:09.7087827Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T17:34:09.7648545Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T17:34:11.1961932Z Container has finished running with exit code: 1.
+2026-08-02T17:34:11.1963282Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T17:34:11.2077163Z Stop and delete container. Retry count = 0
+2026-08-02T17:34:11.2087400Z Stopping container: 5748ff045749_ahmad-securebank-app.
+2026-08-02T17:34:11.3338159Z Deleting container: 5748ff045749_ahmad-securebank-app. Retry count = 0
+2026-08-02T17:34:11.6354012Z Container spec TerminationMessagePolicy  path 
+2026-08-02T17:34:11.6424260Z Container is terminated. Total time elapsed: 436 ms.
+2026-08-02T17:34:11.6433156Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T17:34:11.6452419Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 16:59:06, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:11.6637404Z Site startup probe failed after 1.8945515 seconds.
+2026-08-02T17:34:11.9021171Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:11.9227462Z Failed to start site. Revert by stopping site.
+2026-08-02T17:34:11.9311931Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:11.9338660Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:12.4491635Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T17:34:12.4652269Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:12.4667107Z Site: ahmad-securebank-app stopped.
+2026-08-02T17:34:12.4856693Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:12.9535985Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T17:34:19.9842611Z Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 17:36:19
+2026-08-02T17:34:19.9921826Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 17:36:19, DetailsLevel: WARN
+2026-08-02T17:34:20.0024522Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 17:34:20 (UTC), DetailsLevel: WARN
+2026-08-02T17:34:20.3520678Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 17:34:20 (UTC), DetailsLevel: WARN
+2026-08-02T17:36:19.9869460Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T18:08:07.6428428Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 17:34:20 (UTC), DetailsLevel: WARN
+2026-08-02T18:08:19.0274486Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 17:34:20 (UTC), DetailsLevel: WARN
+2026-08-02T18:09:08.8079538Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 17:34:20 (UTC), DetailsLevel: WARN
+2026-08-02T18:09:08.8094694Z Container start method called.
+2026-08-02T18:09:08.8265537Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T18:09:08.8267747Z Establishing network.
+2026-08-02T18:09:08.8270813Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T18:09:09.1184838Z Container is starting.
+2026-08-02T18:09:09.1190151Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T18:09:09.1195204Z Establishing user namespace if not established already.
+2026-08-02T18:09:09.1201809Z Establishing network if not established already.
+2026-08-02T18:09:09.1208765Z Mounting volumes.
+2026-08-02T18:09:09.1270907Z Nested mountpoint 
+2026-08-02T18:09:09.1663725Z Nested mountpoint volatile/logs
+2026-08-02T18:09:09.1892224Z Nested mountpoint 
+2026-08-02T18:09:09.1897162Z Nested mountpoint 
+2026-08-02T18:09:09.3746643Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T18:09:09.3748491Z Creating container.
+2026-08-02T18:09:09.3749746Z Creating pipes for streaming container io.
+2026-08-02T18:09:09.3751625Z Creating stdout named pipe at /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stdout_1fa7c349ac6946af8ef48d6395a98157.
+2026-08-02T18:09:09.3755510Z Successfully created stdout named pipe at: /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stdout_1fa7c349ac6946af8ef48d6395a98157.
+2026-08-02T18:09:09.3758685Z Opening named pipe /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stdout_1fa7c349ac6946af8ef48d6395a98157 for reading in non-blocking mode.
+2026-08-02T18:09:09.3860786Z Successfully opened named pipe: /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stdout_1fa7c349ac6946af8ef48d6395a98157.
+2026-08-02T18:09:09.3944721Z Successfully removed non-blocking flag from /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stdout_1fa7c349ac6946af8ef48d6395a98157.
+2026-08-02T18:09:09.4071096Z Creating stderr named pipe at /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stderr_b4b771dc8dcf413894cdfb459b373e58.
+2026-08-02T18:09:09.4073023Z Successfully created stderr named pipe at: /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stderr_b4b771dc8dcf413894cdfb459b373e58.
+2026-08-02T18:09:09.4073915Z Opening named pipe /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stderr_b4b771dc8dcf413894cdfb459b373e58 for reading in non-blocking mode.
+2026-08-02T18:09:09.4077968Z Successfully opened named pipe: /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stderr_b4b771dc8dcf413894cdfb459b373e58.
+2026-08-02T18:09:09.4082082Z Successfully removed non-blocking flag from /podr/container/pipe/c9227ebc0cb7_ahmad-securebank-app/stderr_b4b771dc8dcf413894cdfb459b373e58.
+2026-08-02T18:09:09.4255076Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T18:09:09.4256232Z Setting value of PORT variable to 80
+2026-08-02T18:09:09.4261031Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T18:09:09.9739534Z Starting container: c9227ebc0cb7_ahmad-securebank-app.
+2026-08-02T18:09:10.1090859Z Starting watchers and probes.
+2026-08-02T18:09:10.1198933Z Starting metrics collection.
+2026-08-02T18:09:10.1201678Z Container is running.
+2026-08-02T18:09:10.1204605Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T18:09:10.2478858Z Container start method finished after 1438 ms.
+2026-08-02T18:09:10.2483228Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T18:09:10.2484044Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T18:09:11.5668469Z Container has finished running with exit code: 1.
+2026-08-02T18:09:11.5684673Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T18:09:11.5783845Z Stop and delete container. Retry count = 0
+2026-08-02T18:09:11.5784856Z Stopping container: c9227ebc0cb7_ahmad-securebank-app.
+2026-08-02T18:09:11.7030814Z Deleting container: c9227ebc0cb7_ahmad-securebank-app. Retry count = 0
+2026-08-02T18:09:11.9227185Z Container spec TerminationMessagePolicy  path 
+2026-08-02T18:09:11.9301616Z Container is terminated. Total time elapsed: 347 ms.
+2026-08-02T18:09:11.9306096Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T18:09:11.9307656Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 17:34:11, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:11.9403397Z Site startup probe failed after 1.6754637 seconds.
+2026-08-02T18:09:12.1519071Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:12.2006923Z Failed to start site. Revert by stopping site.
+2026-08-02T18:09:12.2126104Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:12.2139158Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:13.3281742Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T18:09:13.3285012Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:13.3288490Z Site: ahmad-securebank-app stopped.
+2026-08-02T18:09:13.3568984Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:13.7146354Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:09:19.9029276Z Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 18:11:19
+2026-08-02T18:09:19.9037406Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 18:11:19, DetailsLevel: WARN
+2026-08-02T18:09:19.9127604Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:09:19 (UTC), DetailsLevel: WARN
+2026-08-02T18:09:20.3580763Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:09:19 (UTC), DetailsLevel: WARN
+2026-08-02T18:11:19.9021571Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T18:43:08.9108555Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:09:19 (UTC), DetailsLevel: WARN
+2026-08-02T18:43:20.6218267Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:09:19 (UTC), DetailsLevel: WARN
+2026-08-02T18:44:13.1753472Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:09:19 (UTC), DetailsLevel: WARN
+2026-08-02T18:44:13.1764568Z Container start method called.
+2026-08-02T18:44:13.1773350Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T18:44:13.1779289Z Establishing network.
+2026-08-02T18:44:13.1787480Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T18:44:13.6071120Z Container is starting.
+2026-08-02T18:44:13.6088680Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T18:44:13.6092423Z Establishing user namespace if not established already.
+2026-08-02T18:44:13.6104289Z Establishing network if not established already.
+2026-08-02T18:44:13.6172850Z Mounting volumes.
+2026-08-02T18:44:13.6180174Z Nested mountpoint 
+2026-08-02T18:44:13.6669991Z Nested mountpoint volatile/logs
+2026-08-02T18:44:13.6942195Z Nested mountpoint 
+2026-08-02T18:44:13.7159204Z Nested mountpoint 
+2026-08-02T18:44:13.8219582Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T18:44:13.8220446Z Creating container.
+2026-08-02T18:44:13.8221219Z Creating pipes for streaming container io.
+2026-08-02T18:44:13.8221877Z Creating stdout named pipe at /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stdout_f3fb2fb37a2f45e797c886d9909415d7.
+2026-08-02T18:44:13.8223625Z Successfully created stdout named pipe at: /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stdout_f3fb2fb37a2f45e797c886d9909415d7.
+2026-08-02T18:44:13.8224561Z Opening named pipe /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stdout_f3fb2fb37a2f45e797c886d9909415d7 for reading in non-blocking mode.
+2026-08-02T18:44:13.8225576Z Successfully opened named pipe: /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stdout_f3fb2fb37a2f45e797c886d9909415d7.
+2026-08-02T18:44:13.8226487Z Successfully removed non-blocking flag from /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stdout_f3fb2fb37a2f45e797c886d9909415d7.
+2026-08-02T18:44:13.8435640Z Creating stderr named pipe at /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stderr_3121bd8076f442d8b9687c4f2c003ddd.
+2026-08-02T18:44:13.8437368Z Successfully created stderr named pipe at: /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stderr_3121bd8076f442d8b9687c4f2c003ddd.
+2026-08-02T18:44:13.8437964Z Opening named pipe /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stderr_3121bd8076f442d8b9687c4f2c003ddd for reading in non-blocking mode.
+2026-08-02T18:44:13.8438687Z Successfully opened named pipe: /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stderr_3121bd8076f442d8b9687c4f2c003ddd.
+2026-08-02T18:44:13.8439364Z Successfully removed non-blocking flag from /podr/container/pipe/fe053e0d2da9_ahmad-securebank-app/stderr_3121bd8076f442d8b9687c4f2c003ddd.
+2026-08-02T18:44:13.8440179Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T18:44:13.8440882Z Setting value of PORT variable to 80
+2026-08-02T18:44:13.8442089Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T18:44:14.7729553Z Starting container: fe053e0d2da9_ahmad-securebank-app.
+2026-08-02T18:44:14.8362893Z Starting watchers and probes.
+2026-08-02T18:44:14.8541887Z Starting metrics collection.
+2026-08-02T18:44:14.8572024Z Container is running.
+2026-08-02T18:44:14.8631457Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T18:44:15.0121493Z Container start method finished after 1807 ms.
+2026-08-02T18:44:15.0895106Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T18:44:15.0895746Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T18:44:16.1308184Z Container has finished running with exit code: 1.
+2026-08-02T18:44:16.1309712Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T18:44:16.1342927Z Stop and delete container. Retry count = 0
+2026-08-02T18:44:16.1344390Z Stopping container: fe053e0d2da9_ahmad-securebank-app.
+2026-08-02T18:44:16.2317146Z Deleting container: fe053e0d2da9_ahmad-securebank-app. Retry count = 0
+2026-08-02T18:44:16.4583363Z Container spec TerminationMessagePolicy  path 
+2026-08-02T18:44:16.4679509Z Container is terminated. Total time elapsed: 336 ms.
+2026-08-02T18:44:16.4759129Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T18:44:16.4761415Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:09:12, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:16.5042304Z Site startup probe failed after 1.4047463 seconds.
+2026-08-02T18:44:16.6839377Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:16.7035110Z Failed to start site. Revert by stopping site.
+2026-08-02T18:44:16.7111144Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:16.7196462Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:17.1730337Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T18:44:17.1904033Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:17.1912374Z Site: ahmad-securebank-app stopped.
+2026-08-02T18:44:17.2022282Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:17.7064275Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T18:44:24.4833874Z Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 18:46:24
+2026-08-02T18:44:24.4847416Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 18:46:24, DetailsLevel: WARN
+2026-08-02T18:44:24.5039182Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:44:24 (UTC), DetailsLevel: WARN
+2026-08-02T18:44:24.8691449Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:44:24 (UTC), DetailsLevel: WARN
+2026-08-02T18:46:24.4831685Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T19:18:10.8262076Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:44:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:18:20.7850766Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:44:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:19:12.0302783Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 18:44:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:19:12.0311691Z Container start method called.
+2026-08-02T19:19:12.0317754Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:19:12.0319252Z Establishing network.
+2026-08-02T19:19:12.0506118Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T19:19:12.3259367Z Container is starting.
+2026-08-02T19:19:12.3261141Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:19:12.3261748Z Establishing user namespace if not established already.
+2026-08-02T19:19:12.3262209Z Establishing network if not established already.
+2026-08-02T19:19:12.3263079Z Mounting volumes.
+2026-08-02T19:19:12.3264177Z Nested mountpoint 
+2026-08-02T19:19:12.3586845Z Nested mountpoint volatile/logs
+2026-08-02T19:19:12.4377346Z Nested mountpoint 
+2026-08-02T19:19:12.4451388Z Nested mountpoint 
+2026-08-02T19:19:12.5936012Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T19:19:12.6020263Z Creating container.
+2026-08-02T19:19:12.6026559Z Creating pipes for streaming container io.
+2026-08-02T19:19:12.6032608Z Creating stdout named pipe at /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stdout_7912263dde5d457188919afbdd845780.
+2026-08-02T19:19:12.6111115Z Successfully created stdout named pipe at: /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stdout_7912263dde5d457188919afbdd845780.
+2026-08-02T19:19:12.6114140Z Opening named pipe /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stdout_7912263dde5d457188919afbdd845780 for reading in non-blocking mode.
+2026-08-02T19:19:12.6134445Z Successfully opened named pipe: /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stdout_7912263dde5d457188919afbdd845780.
+2026-08-02T19:19:12.6213985Z Successfully removed non-blocking flag from /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stdout_7912263dde5d457188919afbdd845780.
+2026-08-02T19:19:12.6427329Z Creating stderr named pipe at /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stderr_306a9b74c97a40bb91a55b1892f7690f.
+2026-08-02T19:19:12.6429197Z Successfully created stderr named pipe at: /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stderr_306a9b74c97a40bb91a55b1892f7690f.
+2026-08-02T19:19:12.6429852Z Opening named pipe /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stderr_306a9b74c97a40bb91a55b1892f7690f for reading in non-blocking mode.
+2026-08-02T19:19:12.6430666Z Successfully opened named pipe: /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stderr_306a9b74c97a40bb91a55b1892f7690f.
+2026-08-02T19:19:12.6431269Z Successfully removed non-blocking flag from /podr/container/pipe/ba56dff4fc9c_ahmad-securebank-app/stderr_306a9b74c97a40bb91a55b1892f7690f.
+2026-08-02T19:19:12.6502098Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T19:19:12.6502763Z Setting value of PORT variable to 80
+2026-08-02T19:19:12.6522002Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T19:19:12.9080376Z Container get mounts received unexpected exception.
+2026-08-02T19:19:12.9473330Z Container get processes received unexpected exception.
+2026-08-02T19:19:13.5474462Z Starting container: ba56dff4fc9c_ahmad-securebank-app.
+2026-08-02T19:19:13.6350432Z Starting watchers and probes.
+2026-08-02T19:19:13.6372856Z Starting metrics collection.
+2026-08-02T19:19:13.6466149Z Container is running.
+2026-08-02T19:19:13.6485272Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:19:13.7650856Z Container start method finished after 1733 ms.
+2026-08-02T19:19:13.7895955Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:19:13.7896481Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T19:19:15.4288553Z Container has finished running with exit code: 1.
+2026-08-02T19:19:15.4290770Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T19:19:15.4396542Z Stop and delete container. Retry count = 0
+2026-08-02T19:19:15.4398602Z Stopping container: ba56dff4fc9c_ahmad-securebank-app.
+2026-08-02T19:19:15.5259697Z Deleting container: ba56dff4fc9c_ahmad-securebank-app. Retry count = 0
+2026-08-02T19:19:15.8488130Z Container spec TerminationMessagePolicy  path 
+2026-08-02T19:19:15.8504134Z Container is terminated. Total time elapsed: 420 ms.
+2026-08-02T19:19:15.8508919Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T19:19:15.8510660Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 18:44:16, LastErrorDetails: Container exited with exit code 1 during startup after 1.6s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:15.8616715Z Site startup probe failed after 2.0715664 seconds.
+2026-08-02T19:19:16.0409844Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:16.0783644Z Failed to start site. Revert by stopping site.
+2026-08-02T19:19:16.0795374Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:16.0811207Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:18.1508070Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T19:19:18.1509298Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:18.1510757Z Site: ahmad-securebank-app stopped.
+2026-08-02T19:19:18.1603382Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:18.5376439Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:19:24.3162916Z Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 19:21:24
+2026-08-02T19:19:24.3171434Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site: ahmad-securebank-app will be blocked for 2 minutes till 08/02/2026 19:21:24, DetailsLevel: WARN
+2026-08-02T19:19:24.3355771Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:19:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:19:24.8344207Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:19:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:21:24.3185185Z Site: ahmad-securebank-app is unblocked.
+2026-08-02T19:52:52.6118352Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:19:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:52:57.9679791Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:19:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:53:48.1395746Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:19:24 (UTC), DetailsLevel: WARN
+2026-08-02T19:53:48.1409079Z Container start method called.
+2026-08-02T19:53:48.1471340Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:53:48.1474088Z Establishing network.
+2026-08-02T19:53:48.1478259Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T19:53:48.3083749Z Container is starting.
+2026-08-02T19:53:48.3118086Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:53:48.3120886Z Establishing user namespace if not established already.
+2026-08-02T19:53:48.3122299Z Establishing network if not established already.
+2026-08-02T19:53:48.3123718Z Mounting volumes.
+2026-08-02T19:53:48.3125468Z Nested mountpoint 
+2026-08-02T19:53:48.3194794Z Nested mountpoint volatile/logs
+2026-08-02T19:53:48.3400692Z Nested mountpoint 
+2026-08-02T19:53:48.3418658Z Nested mountpoint 
+2026-08-02T19:53:48.4670284Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T19:53:48.4674788Z Creating container.
+2026-08-02T19:53:48.4683453Z Creating pipes for streaming container io.
+2026-08-02T19:53:48.4688460Z Creating stdout named pipe at /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stdout_29dc1979dfd6438f8e282e9f717e226c.
+2026-08-02T19:53:48.4693735Z Successfully created stdout named pipe at: /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stdout_29dc1979dfd6438f8e282e9f717e226c.
+2026-08-02T19:53:48.4696425Z Opening named pipe /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stdout_29dc1979dfd6438f8e282e9f717e226c for reading in non-blocking mode.
+2026-08-02T19:53:48.4887645Z Successfully opened named pipe: /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stdout_29dc1979dfd6438f8e282e9f717e226c.
+2026-08-02T19:53:48.4888706Z Successfully removed non-blocking flag from /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stdout_29dc1979dfd6438f8e282e9f717e226c.
+2026-08-02T19:53:48.5468552Z Creating stderr named pipe at /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stderr_00053774ba4045bbb145875b016d7a39.
+2026-08-02T19:53:48.5470435Z Successfully created stderr named pipe at: /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stderr_00053774ba4045bbb145875b016d7a39.
+2026-08-02T19:53:48.5471302Z Opening named pipe /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stderr_00053774ba4045bbb145875b016d7a39 for reading in non-blocking mode.
+2026-08-02T19:53:48.5472185Z Successfully opened named pipe: /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stderr_00053774ba4045bbb145875b016d7a39.
+2026-08-02T19:53:48.5472877Z Successfully removed non-blocking flag from /podr/container/pipe/b75803c22b6c_ahmad-securebank-app/stderr_00053774ba4045bbb145875b016d7a39.
+2026-08-02T19:53:48.5480138Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T19:53:48.5480768Z Setting value of PORT variable to 80
+2026-08-02T19:53:48.5482182Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T19:53:49.2675933Z Starting container: b75803c22b6c_ahmad-securebank-app.
+2026-08-02T19:53:49.3914490Z Starting watchers and probes.
+2026-08-02T19:53:49.4171334Z Starting metrics collection.
+2026-08-02T19:53:49.4173412Z Container is running.
+2026-08-02T19:53:49.4182960Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:53:49.5244613Z Container start method finished after 1382 ms.
+2026-08-02T19:53:49.5260520Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:53:49.5261417Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T19:53:50.8723462Z Container has finished running with exit code: 1.
+2026-08-02T19:53:50.8732932Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T19:53:50.8830266Z Stop and delete container. Retry count = 0
+2026-08-02T19:53:50.8831017Z Stopping container: b75803c22b6c_ahmad-securebank-app.
+2026-08-02T19:53:50.9520921Z Deleting container: b75803c22b6c_ahmad-securebank-app. Retry count = 0
+2026-08-02T19:53:51.2065240Z Container spec TerminationMessagePolicy  path 
+2026-08-02T19:53:51.2074315Z Container is terminated. Total time elapsed: 332 ms.
+2026-08-02T19:53:51.2079939Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T19:53:51.2084618Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:19:16, LastErrorDetails: Container exited with exit code 1 during startup after 2.2s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:53:51.2355653Z Site startup probe failed after 1.6628459 seconds.
+2026-08-02T19:53:51.4056196Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:53:51.4251306Z Failed to start site. Revert by stopping site.
+2026-08-02T19:53:51.4528511Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:53:51.4711424Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:53:51.9691133Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T19:53:51.9694505Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:53:51.9697073Z Site: ahmad-securebank-app stopped.
+2026-08-02T19:54:54.9818733Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:53:53 (UTC), DetailsLevel: WARN
+2026-08-02T19:54:58.7264540Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:53:53 (UTC), DetailsLevel: WARN
+2026-08-02T19:55:55.1033007Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:53:53 (UTC), DetailsLevel: WARN
+2026-08-02T19:55:55.1036737Z Container start method called.
+2026-08-02T19:55:55.1037867Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:55:55.1040471Z Establishing network.
+2026-08-02T19:55:55.1041618Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T19:55:55.3431719Z Container is starting.
+2026-08-02T19:55:55.3437009Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:55:55.3443998Z Establishing user namespace if not established already.
+2026-08-02T19:55:55.3448552Z Establishing network if not established already.
+2026-08-02T19:55:55.3517511Z Mounting volumes.
+2026-08-02T19:55:55.3519523Z Nested mountpoint 
+2026-08-02T19:55:55.3647323Z Nested mountpoint volatile/logs
+2026-08-02T19:55:55.4516885Z Nested mountpoint 
+2026-08-02T19:55:55.4701016Z Nested mountpoint 
+2026-08-02T19:55:55.5221439Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T19:55:55.5222564Z Creating container.
+2026-08-02T19:55:55.5230494Z Creating pipes for streaming container io.
+2026-08-02T19:55:55.5495227Z Creating stdout named pipe at /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stdout_1f0cda16a2f54030ab1f25e4ed74f1c1.
+2026-08-02T19:55:55.5498755Z Successfully created stdout named pipe at: /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stdout_1f0cda16a2f54030ab1f25e4ed74f1c1.
+2026-08-02T19:55:55.5500338Z Opening named pipe /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stdout_1f0cda16a2f54030ab1f25e4ed74f1c1 for reading in non-blocking mode.
+2026-08-02T19:55:55.5501934Z Successfully opened named pipe: /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stdout_1f0cda16a2f54030ab1f25e4ed74f1c1.
+2026-08-02T19:55:55.5502928Z Successfully removed non-blocking flag from /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stdout_1f0cda16a2f54030ab1f25e4ed74f1c1.
+2026-08-02T19:55:55.5519125Z Creating stderr named pipe at /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stderr_4daf9826fc5e4efdb092338a9d5a1651.
+2026-08-02T19:55:55.5522030Z Successfully created stderr named pipe at: /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stderr_4daf9826fc5e4efdb092338a9d5a1651.
+2026-08-02T19:55:55.5652059Z Opening named pipe /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stderr_4daf9826fc5e4efdb092338a9d5a1651 for reading in non-blocking mode.
+2026-08-02T19:55:55.5653409Z Successfully opened named pipe: /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stderr_4daf9826fc5e4efdb092338a9d5a1651.
+2026-08-02T19:55:55.5691415Z Successfully removed non-blocking flag from /podr/container/pipe/e58f139e18d0_ahmad-securebank-app/stderr_4daf9826fc5e4efdb092338a9d5a1651.
+2026-08-02T19:55:55.5723460Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T19:55:55.5724088Z Setting value of PORT variable to 80
+2026-08-02T19:55:55.5725587Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T19:55:56.2807773Z Starting container: e58f139e18d0_ahmad-securebank-app.
+2026-08-02T19:55:56.3906463Z Starting watchers and probes.
+2026-08-02T19:55:56.3912910Z Starting metrics collection.
+2026-08-02T19:55:56.3916160Z Container is running.
+2026-08-02T19:55:56.3917725Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:55:56.5574013Z Container start method finished after 1453 ms.
+2026-08-02T19:55:56.5576541Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:55:56.5577414Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T19:55:57.8336364Z Container has finished running with exit code: 1.
+2026-08-02T19:55:57.8344109Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T19:55:57.8358139Z Stop and delete container. Retry count = 0
+2026-08-02T19:55:57.8363256Z Stopping container: e58f139e18d0_ahmad-securebank-app.
+2026-08-02T19:55:57.9410635Z Deleting container: e58f139e18d0_ahmad-securebank-app. Retry count = 0
+2026-08-02T19:55:58.4518168Z Container spec TerminationMessagePolicy  path 
+2026-08-02T19:55:58.4519446Z Container is terminated. Total time elapsed: 617 ms.
+2026-08-02T19:55:58.4520075Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T19:55:58.4520906Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:53:51, LastErrorDetails: Container exited with exit code 1 during startup after 1.8s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:58.4544009Z Site startup probe failed after 1.8962255 seconds.
+2026-08-02T19:55:58.7178658Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:58.7188973Z Failed to start site. Revert by stopping site.
+2026-08-02T19:55:58.7189911Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:58.7191516Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:59.3936521Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T19:55:59.3941189Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:59.3942324Z Site: ahmad-securebank-app stopped.
+2026-08-02T19:55:59.4053292Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:55:59.9098003Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:00.4146271Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:56:00 (UTC), DetailsLevel: ERR
+2026-08-02T19:56:01.1255506Z State: Stopped, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:56:00 (UTC), DetailsLevel: ERR
+2026-08-02T19:56:01.5115216Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:56:00 (UTC), DetailsLevel: ERR
+2026-08-02T19:56:07.3030286Z State: Starting, Action: StartingMsiContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:56:00 (UTC), DetailsLevel: ERR
+2026-08-02T19:56:55.2915973Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site stopped at 08/02/2026 19:56:00 (UTC), DetailsLevel: ERR
+2026-08-02T19:56:55.2917653Z Container start method called.
+2026-08-02T19:56:55.2918383Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110 for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:56:55.2919069Z Establishing network.
+2026-08-02T19:56:55.2919757Z Pulling image: azure-app-service/java:21.0.9-r260110.
+2026-08-02T19:56:55.5994717Z Container is starting.
+2026-08-02T19:56:55.5995790Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Mounting volumes for ahmad-securebank-app., DetailsLevel: INFO
+2026-08-02T19:56:55.5996762Z Establishing user namespace if not established already.
+2026-08-02T19:56:55.5997716Z Establishing network if not established already.
+2026-08-02T19:56:55.5998665Z Mounting volumes.
+2026-08-02T19:56:55.6004098Z Nested mountpoint 
+2026-08-02T19:56:55.6696162Z Nested mountpoint volatile/logs
+2026-08-02T19:56:55.7017589Z Nested mountpoint 
+2026-08-02T19:56:55.7101374Z Nested mountpoint 
+2026-08-02T19:56:55.8016158Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for ahmad-securebank-app. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-08-02T19:56:55.8016953Z Creating container.
+2026-08-02T19:56:55.8211480Z Creating pipes for streaming container io.
+2026-08-02T19:56:55.8279855Z Creating stdout named pipe at /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stdout_d4c9ee02aa24488294e9fdd22ffe3f44.
+2026-08-02T19:56:55.8299985Z Successfully created stdout named pipe at: /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stdout_d4c9ee02aa24488294e9fdd22ffe3f44.
+2026-08-02T19:56:55.8310006Z Opening named pipe /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stdout_d4c9ee02aa24488294e9fdd22ffe3f44 for reading in non-blocking mode.
+2026-08-02T19:56:55.8574943Z Successfully opened named pipe: /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stdout_d4c9ee02aa24488294e9fdd22ffe3f44.
+2026-08-02T19:56:55.8576225Z Successfully removed non-blocking flag from /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stdout_d4c9ee02aa24488294e9fdd22ffe3f44.
+2026-08-02T19:56:55.8699474Z Creating stderr named pipe at /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stderr_d70e40a9e80b4240b18536a9ec2f0e23.
+2026-08-02T19:56:55.8706547Z Successfully created stderr named pipe at: /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stderr_d70e40a9e80b4240b18536a9ec2f0e23.
+2026-08-02T19:56:55.8709737Z Opening named pipe /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stderr_d70e40a9e80b4240b18536a9ec2f0e23 for reading in non-blocking mode.
+2026-08-02T19:56:55.8783471Z Successfully opened named pipe: /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stderr_d70e40a9e80b4240b18536a9ec2f0e23.
+2026-08-02T19:56:55.8980182Z Successfully removed non-blocking flag from /podr/container/pipe/93d65ca1f942_ahmad-securebank-app/stderr_d70e40a9e80b4240b18536a9ec2f0e23.
+2026-08-02T19:56:55.8982302Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-08-02T19:56:55.8983432Z Setting value of PORT variable to 80
+2026-08-02T19:56:55.8985059Z Creating container with image: azure-app-service/java:21.0.9-r260110 from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/azure-app-service/java:21.0.9-r260110
+2026-08-02T19:56:56.6307826Z Starting container: 93d65ca1f942_ahmad-securebank-app.
+2026-08-02T19:56:56.7667104Z Starting watchers and probes.
+2026-08-02T19:56:56.7672827Z Starting metrics collection.
+2026-08-02T19:56:56.7674930Z Container is running.
+2026-08-02T19:56:56.7677044Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:56:56.8931389Z Container start method finished after 1573 ms.
+2026-08-02T19:56:56.8936161Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Container ahmad-securebank-app successfully created and is running., DetailsLevel: INFO
+2026-08-02T19:56:56.8937095Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-08-02T19:56:57.9768142Z Container has finished running with exit code: 1.
+2026-08-02T19:56:57.9770797Z Container is terminating. Grace period: 5 seconds.
+2026-08-02T19:56:57.9844551Z Stop and delete container. Retry count = 0
+2026-08-02T19:56:57.9847166Z Stopping container: 93d65ca1f942_ahmad-securebank-app.
+2026-08-02T19:56:58.3391846Z Deleting container: 93d65ca1f942_ahmad-securebank-app. Retry count = 0
+2026-08-02T19:56:58.8719592Z Container spec TerminationMessagePolicy  path 
+2026-08-02T19:56:58.8727657Z Container is terminated. Total time elapsed: 894 ms.
+2026-08-02T19:56:58.8732966Z Site container: ahmad-securebank-app terminated during site startup.
+2026-08-02T19:56:58.8737978Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:55:58, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:58.8813277Z Site startup probe failed after 1.9563941 seconds.
+2026-08-02T19:56:59.2074847Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:56:59, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:59.2547753Z Failed to start site. Revert by stopping site.
+2026-08-02T19:56:59.2557046Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:56:59, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:59.2569394Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:56:59, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:59.7929198Z Site container: ahmad-securebank-app_managedIdentity terminated during site startup.
+2026-08-02T19:56:59.8001660Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 08/02/2026 19:56:59, LastErrorDetails: Container exited with exit code 1 during startup after 2.1s. Please inspect your container logs for more details., Details: Site container: ahmad-securebank-app terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-08-02T19:56:59.8010498Z Site: ahmad-securebank-app stopped.

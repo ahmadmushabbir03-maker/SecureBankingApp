@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>4d1cacda-c3b7-4f03-b494-fd7d346f475a</id>
+  <author>N/A</author>
+  <deployer>VSTS_ZIP_DEPLOY</deployer>
+  <authorEmail>N/A</authorEmail>
+  <message>Created via a push deployment</message>
+  <progress></progress>
+  <status>Success</status>
+  <statusText></statusText>
+  <lastSuccessEndTime>2026-08-02T19:52:44.5985787Z</lastSuccessEndTime>
+  <receivedTime>2026-08-02T19:52:34.5679514Z</receivedTime>
+  <startTime>2026-08-02T19:52:36.0435677Z</startTime>
+  <endTime>2026-08-02T19:52:44.5985787Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>True</is_readonly>
+  <containerId>752e74a4f802</containerId>
+  <buildSummary />
+</deployment>

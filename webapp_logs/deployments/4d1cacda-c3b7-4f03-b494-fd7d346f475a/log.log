@@ -1,0 +1,41 @@
+2026-08-02T19:52:34.7928991Z,Updating submodules.,060bcc9e-493c-48d2-9795-c0a6beea80f2,0
+2026-08-02T19:52:35.9794661Z,Preparing deployment for commit id '4d1cacda-c'.,a88f0806-1194-4bb1-b2de-46ba9e5a3907,0
+2026-08-02T19:52:36.3562767Z,PreDeployment: context.CleanOutputPath False,b71d78d7-799c-48f3-b238-98ecfe9f7e8b,0
+2026-08-02T19:52:36.5044773Z,PreDeployment: context.OutputPath /home/site/wwwroot,c3acc7d6-2927-43e0-8fef-5e62fc300620,0
+2026-08-02T19:52:36.6909470Z,Generating deployment script.,1df435cc-b11f-4571-8861-9f6baef22adf,0
+2026-08-02T19:52:36.8252959Z,Running deployment command...,af357097-48c2-4f26-bfec-213284f006a9,0
+	2026-08-02T19:52:36.8425001Z,Command: /opt/Kudu/Scripts/parallel_rsync.sh /tmp/zipdeploy/extracted /home/site/wwwroot 8 /tmp/ False True  ,,0
+	2026-08-02T19:52:37.0970987Z,Run rsync from: /tmp/zipdeploy/extracted/ to: /home/site/wwwroot/ in 8 parallel threads,,0
+	2026-08-02T19:52:37.1315928Z,Delete options: clean=False&comma; use manifest=True&comma; directory to ignore=,,0
+	2026-08-02T19:52:37.1613872Z,Prev manifest = /opt/Kudu/Scripts/firstDeploymentManifest and next /home/site/deployments/4d1cacda-c3b7-4f03-b494-fd7d346f475a/manifest,,0
+	2026-08-02T19:52:37.2073047Z,Cleaning up /tmp//filelist.txt and /tmp//splits,,0
+	2026-08-02T19:52:37.2480339Z,Creating a list of all files at /tmp//filelist.txt,,0
+	2026-08-02T19:52:37.3919954Z,No directory to exclude.,,0
+	2026-08-02T19:52:37.4450998Z,Created /tmp//filelist.txt. Total number of files to be synced = 1.,,0
+	2026-08-02T19:52:37.4755511Z,Created batches from the list of files. Processing 1 files in each thread,,0
+	2026-08-02T19:52:37.4981291Z,Running rsync for filelist /tmp//splits/split.aa from /tmp/zipdeploy/extracted/ to /home/site/wwwroot/,,0
+	2026-08-02T19:52:43.1134870Z,,,0
+	2026-08-02T19:52:43.1594933Z,Number of files: 1 (reg: 1),,0
+	2026-08-02T19:52:43.1691404Z,Number of created files: 1 (reg: 1),,0
+	2026-08-02T19:52:43.1829636Z,Number of deleted files: 0,,0
+	2026-08-02T19:52:43.1953112Z,Number of regular files transferred: 1,,0
+	2026-08-02T19:52:43.2750967Z,Total file size: 71.98M bytes,,0
+	2026-08-02T19:52:43.3532880Z,Total transferred file size: 71.98M bytes,,0
+	2026-08-02T19:52:43.3821011Z,Literal data: 71.98M bytes,,0
+	2026-08-02T19:52:43.4027057Z,Matched data: 0 bytes,,0
+	2026-08-02T19:52:43.4348151Z,File list size: 0,,0
+	2026-08-02T19:52:43.4520591Z,File list generation time: 0.001 seconds,,0
+	2026-08-02T19:52:43.4884261Z,File list transfer time: 0.000 seconds,,0
+	2026-08-02T19:52:43.5010841Z,Total bytes sent: 64.21M,,0
+	2026-08-02T19:52:43.5329441Z,Total bytes received: 35,,0
+	2026-08-02T19:52:43.5430469Z,,,0
+	2026-08-02T19:52:43.5565459Z,sent 64.21M bytes  received 35 bytes  9.88M bytes/sec,,0
+	2026-08-02T19:52:43.5808673Z,total size is 71.98M  speedup is 1.12,,0
+	2026-08-02T19:52:43.5922119Z,Attempt 1: Rsync for filelist /tmp//splits/split.aa completed with exit code 0,,0
+	2026-08-02T19:52:43.6042151Z,Deleting files not present in /tmp/zipdeploy/extracted/ from /home/site/wwwroot/ based on manifest file /opt/Kudu/Scripts/firstDeploymentManifest,,0
+	2026-08-02T19:52:43.6293626Z,Number of files deleted: 1. See /tmp//rsync_deletion_logs.txt for more details.,,0
+	2026-08-02T19:52:43.6564840Z,create new manifest file at /home/site/deployments/4d1cacda-c3b7-4f03-b494-fd7d346f475a/manifest,,0
+	2026-08-02T19:52:43.6721932Z,Completed successfully in 6 seconds,,0
+2026-08-02T19:52:43.8491441Z,Running post deployment command(s)...,f50051eb-6834-45a4-88d6-eb49e69cee12,0
+2026-08-02T19:52:44.0012602Z,Triggering recycle (preview mode disabled).,caa29377-a8d3-418d-9a94-2039312aa766,0
+2026-08-02T19:52:44.3276135Z,Deployment successful. deployer = VSTS_ZIP_DEPLOY deploymentPath = ZipDeploy. Extract zip.,e7666198-d6f3-4e81-b386-7f47f42592ce,0

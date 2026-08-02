@@ -23,6 +23,11 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
 
     public SecurityConfig(JwtAuthenticationFilter jwtAuthenticationFilter) {
+
+        System.out.println("======================================");
+        System.out.println(" SECURITY CONFIG LOADED SUCCESSFULLY ");
+        System.out.println("======================================");
+
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
     }
 

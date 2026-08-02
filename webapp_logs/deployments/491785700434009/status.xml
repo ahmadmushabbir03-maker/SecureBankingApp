@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<deployment>
+  <id>491785700434009</id>
+  <author>ahmadmushabbir03</author>
+  <deployer>VSTS</deployer>
+  <authorEmail />
+  <message>{"type":"Deployment","commitId":"d8ce28101c72d44210f2ef67deb97b6c970bc977","buildId":"49","buildNumber":"20260802.2","repoProvider":"TfsGit","repoName":"SecureDigitalBanking","collectionUrl":"https://dev.azure.com/ahmadmushabbir03/","teamProject":"d27108a7-e964-4e72-a6ba-3c8b426f0ece","buildProjectUrl":"https://dev.azure.com/ahmadmushabbir03/d27108a7-e964-4e72-a6ba-3c8b426f0ece","repositoryUrl":"https://ahmadmushabbir03@dev.azure.com/ahmadmushabbir03/SecureDigitalBanking/_git/SecureDigitalBanking","branch":"main","teamProjectName":"SecureDigitalBanking","slotName":"production"}</message>
+  <progress />
+  <status>Success</status>
+  <statusText />
+  <lastSuccessEndTime>2026-08-02T19:53:54.2255226Z</lastSuccessEndTime>
+  <receivedTime>2026-08-02T19:53:54.2255226Z</receivedTime>
+  <startTime>2026-08-02T19:53:54.2255226Z</startTime>
+  <endTime>2026-08-02T19:53:54.2255226Z</endTime>
+  <complete>True</complete>
+  <is_temp>False</is_temp>
+  <is_readonly>True</is_readonly>
+  <containerId>752e74a4f802</containerId>
+  <buildSummary />
+</deployment>

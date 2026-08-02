@@ -1,5 +1,4 @@
 spring:
-
   datasource:
     url: jdbc:h2:mem:bankdb
     driver-class-name: org.h2.Driver
@@ -30,11 +29,10 @@ server:
   port: 8080
 
 logging:
-
   level:
     root: INFO
     com.bank: DEBUG
-    org.springframework.security: INFO
+    org.springframework.security: TRACE
     org.hibernate.SQL: DEBUG
 
 management:
