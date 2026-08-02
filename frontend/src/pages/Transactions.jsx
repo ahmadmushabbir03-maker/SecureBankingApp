@@ -5,116 +5,172 @@ import {
   Container,
   Paper,
   Table,
-  TableBody,
-  TableCell,
-  TableContainer,
   TableHead,
+  TableBody,
   TableRow,
-  Button
+  TableCell,
+  Chip,
+  Box
 } from "@mui/material";
 
-export default function Transactions() {
+const transactions = [
 
-  const transactions = [
-    {
-      date: "2026-08-01",
-      description: "Payroll Deposit",
-      amount: "+ CAD 2,500.00"
-    },
-    {
-      date: "2026-08-01",
-      description: "Walmart",
-      amount: "- CAD 126.35"
-    },
-    {
-      date: "2026-07-31",
-      description: "Cafe Niloufer",
-      amount: "- CAD 18.50"
-    },
-    {
-      date: "2026-07-30",
-      description: "Pistah House",
-      amount: "- CAD 45.00"
-    }
-  ];
+  {
+    date:"2026-08-02",
+    merchant:"Payroll Deposit",
+    amount:"+ CAD 2,500.00",
+    status:"Credit"
+  },
 
-  return (
-    <>
-      <AppBar position="static">
-        <Toolbar>
+  {
+    date:"2026-08-02",
+    merchant:"Pista House",
+    amount:"- CAD 42.80",
+    status:"Debit"
+  },
 
-          <Typography
-            variant="h6"
-            sx={{ flexGrow: 1 }}
-          >
-            Secure Digital Banking
-          </Typography>
+  {
+    date:"2026-08-01",
+    merchant:"Cafe Niloufer",
+    amount:"- CAD 18.50",
+    status:"Debit"
+  },
 
-          <Button color="inherit">
-            Dashboard
-          </Button>
+  {
+    date:"2026-08-01",
+    merchant:"Hotel Shadab",
+    amount:"- CAD 36.25",
+    status:"Debit"
+  },
 
-        </Toolbar>
-      </AppBar>
+  {
+    date:"2026-07-31",
+    merchant:"Shah Ghouse",
+    amount:"- CAD 54.60",
+    status:"Debit"
+  },
 
-      <Container sx={{ mt: 4 }}>
+  {
+    date:"2026-07-31",
+    merchant:"Tim Hortons",
+    amount:"- CAD 8.95",
+    status:"Debit"
+  },
 
-        <Typography
-          variant="h4"
-          gutterBottom
-        >
-          Recent Transactions
-        </Typography>
+  {
+    date:"2026-07-30",
+    merchant:"Hydro One",
+    amount:"- CAD 112.20",
+    status:"Debit"
+  },
 
-        <TableContainer component={Paper}>
+  {
+    date:"2026-07-30",
+    merchant:"Petro Canada",
+    amount:"- CAD 64.90",
+    status:"Debit"
+  },
 
-          <Table>
+  {
+    date:"2026-07-29",
+    merchant:"Rogers",
+    amount:"- CAD 79.99",
+    status:"Debit"
+  },
 
-            <TableHead>
+  {
+    date:"2026-07-29",
+    merchant:"Walmart",
+    amount:"- CAD 126.35",
+    status:"Debit"
+  }
 
-              <TableRow>
+];
 
-                <TableCell>Date</TableCell>
+export default function Transactions(){
 
-                <TableCell>Description</TableCell>
+return(
 
-                <TableCell align="right">Amount</TableCell>
+<Box sx={{background:"#f5f7fb",minHeight:"100vh"}}>
 
-              </TableRow>
+<AppBar position="static">
 
-            </TableHead>
+<Toolbar>
 
-            <TableBody>
+<Typography variant="h6">
 
-              {transactions.map((transaction, index) => (
+Recent Transactions
 
-                <TableRow key={index}>
+</Typography>
 
-                  <TableCell>
-                    {transaction.date}
-                  </TableCell>
+</Toolbar>
 
-                  <TableCell>
-                    {transaction.description}
-                  </TableCell>
+</AppBar>
 
-                  <TableCell align="right">
-                    {transaction.amount}
-                  </TableCell>
+<Container sx={{mt:5}}>
 
-                </TableRow>
+<Paper elevation={8} sx={{borderRadius:4}}>
 
-              ))}
+<Table>
 
-            </TableBody>
+<TableHead>
 
-          </Table>
+<TableRow>
 
-        </TableContainer>
+<TableCell>Date</TableCell>
 
-      </Container>
+<TableCell>Merchant</TableCell>
 
-    </>
-  );
+<TableCell>Status</TableCell>
+
+<TableCell align="right">Amount</TableCell>
+
+</TableRow>
+
+</TableHead>
+
+<TableBody>
+
+{transactions.map((t,index)=>(
+
+<TableRow key={index}>
+
+<TableCell>{t.date}</TableCell>
+
+<TableCell>{t.merchant}</TableCell>
+
+<TableCell>
+
+<Chip
+
+label={t.status}
+
+color={t.status==="Credit"?"success":"error"}
+
+/>
+
+</TableCell>
+
+<TableCell align="right">
+
+{t.amount}
+
+</TableCell>
+
+</TableRow>
+
+))}
+
+</TableBody>
+
+</Table>
+
+</Paper>
+
+</Container>
+
+</Box>
+
+);
 
 }
