@@ -9,6 +9,13 @@ This project showcases modern DevOps practices, cloud deployment, and enterprise
 ---
 
 # 🏗️ Solution Architecture
+# 🏦 Secure Digital Banking Application
+
+## Solution Architecture
+
+<p align="center">
+  <img src="docs/architecture.png" alt="Architecture Diagram" width="1000"/>
+</p>
 
 ```
 Developer
